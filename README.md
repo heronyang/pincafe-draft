@@ -1,4 +1,3 @@
-## Pros and Cons
+# PinCafe - Draft
 
-- bootstrap: acceptable, but not interesting
-- ink: no search input in the navigation
+This is some testings on which front-end design template we are going to use.
