@@ -29,6 +29,10 @@ html {
     padding-top: 15px;
 }
 
+.left-panel hr {
+    margin-bottom: 0px;
+}
+
 /* map */
 #map {
     height: calc(100% - 50px);
@@ -46,3 +50,24 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 /* table */
+.table h4 {
+    padding-left: 10px;
+}
+.table tbody>tr>td {
+    vertical-align: middle;
+}
+
+.table tbody>tr:first-child td {
+    border-top: none;
+}
+
+/* result */
+.result-list-container {
+    padding-top: 20px;
+    overflow: scroll;
+    height: calc(100vh - 335px);
+}
+
+.thumbnail img {
+    height: 280px;
+}
