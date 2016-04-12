@@ -483,7 +483,7 @@
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
 
-            center: {lat: 25.0226503, lng:121.5310498},
+            center: {lat: 25.0226503, lng: 121.5310498},
             zoom: 17,
 
             disableDefaultUI: true,
@@ -502,6 +502,34 @@
             }
 
         });
+
+        var fakeMarker1 ={lat: 25.0226503, lng: 121.5310498};
+        var fakeMarker2 ={lat: 25.0246603, lng: 121.5310498};
+        var fakeMarker3 ={lat: 25.0216703, lng: 121.5300498};
+        var fakeMarker4 ={lat: 25.0246803, lng: 121.5300498};
+        var fakeMarker5 ={lat: 25.0236903, lng: 121.5310498};
+
+        var marker1 = new google.maps.Marker({
+            position: fakeMarker1,
+            map: map
+        });
+        var marker2 = new google.maps.Marker({
+            position: fakeMarker2,
+            map: map
+        });
+        var marker3 = new google.maps.Marker({
+            position: fakeMarker3,
+            map: map
+        });
+        var marker4 = new google.maps.Marker({
+            position: fakeMarker4,
+            map: map
+        });
+        var marker5 = new google.maps.Marker({
+            position: fakeMarker5,
+            map: map
+        });
+
       }
     </script>
   </body>

@@ -65,7 +65,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 .result-list-container {
     padding-top: 20px;
     overflow: scroll;
-    height: calc(100vh - 335px);
+    height: calc(100vh - 254px);
 }
 
 .thumbnail img {
