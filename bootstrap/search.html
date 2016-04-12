@@ -1,0 +1,172 @@
+<!DOCTYPE>
+
+<html>
+  <head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Pin Cafe</title>
+
+    <link href="./css/reset.css" rel="stylesheet"/>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="./css/custom.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="col-sm-12 col-md-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" rel="home" href="/" title="Aahan Krish's Blog - Homepage">PinCafe</a>
+          </div>
+          <form class="navbar-form" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" value="溫州街" name="srch-term" id="srch-term">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- righthand panel -->
+        <div class="col-md-8 col-sm-12 content-panel left-panel">
+
+          <blockquote>
+            <p>Always find the best.</p>
+          </blockquote>
+
+          <!-- option table -->
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="col-sm-4">
+                  <p>食物</p>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> 早餐</label>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> 午餐</label>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> 輕食</label>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> 點心</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-sm-4">
+                  <p>設備</p>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> <i class="fa fa-wifi"></i></label>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> <i class="fa fa-power-off"></i></label>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> <i class="fa fa-book"></i></label>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> <i class="fa fa-phone"></i></label>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-sm-4">
+                  <p>氣氛</p>
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> 聚會</label>
+                </td>
+                <td class="col-sm-2">
+                </td>
+                <td class="col-sm-2">
+                  <label><input type="checkbox"> 讀書</label>
+                </td>
+                <td class="col-sm-2">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        <hr />
+
+        <!-- result list -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <!-- lefthand map -->
+        <div class="col-md-4 col-sm-12 content-panel">
+          <div id="map"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDiw_0Dnug9zP27jioy8ezTik5aF2Kw83o" async defer></script>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+
+            center: {lat: 25.0226503, lng:121.5310498},
+            zoom: 17,
+
+            disableDefaultUI: true,
+            zoomControl: true,
+            zoomControlOptions: {
+              position: google.maps.ControlPosition.RIGHT_BOTTOM
+            },
+            scaleControl: true,
+            streetViewControl: true,
+            streetViewControlOptions: {
+              position: google.maps.ControlPosition.RIGHT_BOTTOM
+            },
+            fullscreenControl: true,
+            fullscreenControlOptions: {
+              position: google.maps.ControlPosition.RIGHT_BOTTOM
+            }
+
+        });
+      }
+    </script>
+  </body>
+</html>
+
