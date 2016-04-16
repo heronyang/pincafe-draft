@@ -3,23 +3,6 @@ body {
     overflow: hidden;
 }
 
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* navbar */
-.navbar-form .btn {
-    padding: 9px 18px;
-}
-
-.navbar {
-    margin-bottom: 0px;
-}
-
 /* panel */
 .content-panel {
     padding: 0px;
@@ -37,16 +20,6 @@ html {
 #map {
     height: calc(100% - 50px);
     width: 100%;
-}
-
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
-
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-    display:none;
-}
-.gmnoprint div {
-    background:none !important;
 }
 
 /* table */
