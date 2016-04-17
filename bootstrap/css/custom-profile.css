@@ -4,23 +4,31 @@
 }
 
 .carousel .item {
-  height: 640px;
+  height: 500px;
 }
 
 .item img {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 640px;
+  min-height: 500px;
 }
 
 /* details */
+h1.section-heading {
+  margin-bottom: 0px;
+}
+
 .rating-container {
   color: #ff9b22;
 }
 
 .foodtype-container span {
   margin-right: 10px;
+}
+
+.foodtype-container {
+  padding-left: 3px;
 }
 
 .tag-container .pager {
@@ -44,13 +52,27 @@
 
 /* right col */
 .right-detail-container {
-  top: -60px;
+  top: -85px;
 }
 
 .utility {
-  height: 60px;
-  background-color: #333;
+  height: 85px;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
+}
+
+.utility .row div{
+  padding: 0px;
+}
+
+.utility img {
+  height: 40px;
+}
+
+.utility p {
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .utility i.fa {
@@ -66,6 +88,7 @@
 .contact .container {
   display: block;
   width: 100%;
+  padding: 5px 45px;
 }
 
 .contact .row{
@@ -80,6 +103,17 @@
 .map{
   height: 600px;
   background-color: #eee;
+}
+
+.share-button-container {
+  height: 60px;
+  text-align: center;
+  color: #3b5998;
+}
+
+.share-button-container span {
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 footer {
