@@ -108,7 +108,14 @@ h1.section-heading {
 .share-button-container {
   height: 60px;
   text-align: center;
+}
+
+.share-button-container div:nth-child(1) {
   color: #3b5998;
+}
+
+.share-button-container div:nth-child(2) {
+  color: #cd5743;
 }
 
 .share-button-container span {
