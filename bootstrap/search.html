@@ -73,430 +73,593 @@
     <div class="container-fluid">
       <div class="row">
 
-        <!-- righthand panel -->
-        <div class="col-md-8 col-sm-12 content-panel left-panel">
+        <!-- lefthand panel -->
+        <div class="col-md-7 col-sm-12 content-panel left-panel">
 
-          <!-- filter table -->
-          <table class="table table-hover table-responsive">
-            <tbody>
-              <tr>
-                <td class="col-sm-4">
-                  <h4>食物</h4>
-                </td>
-                <td class="col-sm-2 vert-align">
-                  <label><input type="checkbox"> 早餐</label>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> 午餐</label>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> 輕食</label>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> 點心</label>
-                </td>
-              </tr>
-              <tr>
-                <td class="col-sm-4">
-                  <h4>設備</h4>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> <i class="fa fa-wifi"></i></label>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> <i class="fa fa-power-off"></i></label>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> <i class="fa fa-book"></i></label>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> <i class="fa fa-phone"></i></label>
-                </td>
-              </tr>
-              <tr>
-                <td class="col-sm-4">
-                  <h4>氣氛</h4>
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> 聚會</label>
-                </td>
-                <td class="col-sm-2">
-                </td>
-                <td class="col-sm-2">
-                  <label><input type="checkbox"> 讀書</label>
-                </td>
-                <td class="col-sm-2">
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <hr />
-
-          <!-- result list -->
-          <div class="container-fluid result-list-container">
+          <div class="container-fluid filter-container">
             <div class="row">
 
-              <!-- result option bar -->
-              <div class="container-fluid">
+              <div class="col-md-2">
+                <p class="option-title"><b>需求</b></p>
+              </div>
+
+              <div class="col-md-10">
+
                 <div class="row">
-                  <div class="col-md-2">
-                    <div class="form-group">
-                      <label for="sort-by">排序方法:</label>
-                      <select class="form-control" id="sort-by">
-                        <option selected>距離</option>
-                        <option>評價</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="form-group">
-                      <label for="open-now">只顯示營業中: <input type="checkbox" id="open-now"/></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_3.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">極簡咖啡館</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            (143)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <div class="col-md-3">
+                        <img src="img/item_wifi.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <p>Wifi</p>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_2.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">好喝咖啡</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            (101)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <div class="col-md-3">
+                        <img src="img/item_power.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <p>插座</p>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_3.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">好像好喝咖啡</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            (80)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <div class="col-md-3">
+                        <img src="img/item_time.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <p>限時</p>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_3.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">極簡咖啡館</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            (143)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <div class="col-md-3">
+                        <img src="img/item_booking.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <p>訂位服務</p>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_4.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">好喝咖啡</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            (101)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_3.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">好像好喝咖啡</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            (80)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_1.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">極簡咖啡館</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            (143)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_4.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">好喝咖啡</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            (101)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- result item -->
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <img src="./img/img_3.jpg" alt=""/>
-                  <div class="caption">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><a href="">好像好喝咖啡</a></h3>
-                          <h4>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            (80)
-                          </h4>
-                        </div>
-                        <div class="col-md-6">
-                          <br />
-                          <i class="fa fa-wifi"></i>
-                          <i class="fa fa-power-off"></i>
-                          <i class="fa fa-book"></i>
-                          <i class="fa fa-phone"></i>
-                          <br />
-                          <span class="label label-default">現代</span>
-                          <span class="label label-default">貓</span>
-                          <span class="label label-default">安靜</span>
-                          <span class="label label-default">台大</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
 
             </div>
           </div>
 
+          <hr class="invisible"/>
+
+          <div class="container-fluid filter-container">
+
+            <div class="row">
+
+              <div class="col-md-2">
+                <p class="option-title"><b>想去的時間</b></p>
+              </div>
+
+              <div class="col-md-10">
+
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <div class="row option-box option-box-time enabled">
+                      <p>現在</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="row option-box option-box-time" data-toggle="modal" data-target="#specific-time-modal">
+                      <p id="specific-time-text">指定時間</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="row option-box option-box-time">
+                      <p>不限</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <hr class="invisible"/>
+
+          <div class="container-fluid filter-container">
+
+            <div class="row">
+
+              <div class="col-md-2">
+                <p class="option-title"><b>餐點</b></p>
+              </div>
+
+              <div class="col-md-10">
+
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <p>早午餐</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <p>正餐</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <p>輕食</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <p>點心</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <hr />
+
+          <div class="container-fluid filter-container sorting-container">
+
+            <div class="row">
+
+              <div class="col-md-2">
+                <p class="option-title"><b>排序方法</b></p>
+              </div>
+
+              <div class="col-md-10">
+
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <div class="row option-box">
+                      <select class="form-control">
+                        <option value="0">評價</option>
+                        <option value="1">距離</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- result list -->
+          <div class="container-fluid result-list-container">
+            <div class="row">
+
+
+
+
+              <!-- result item -->
+              <div class="col-md-6">
+
+                <div class="thumbnail">
+                  <img class="thumbnail-image" src="./img/img_1.jpg" alt=""/>
+                  <div class="caption">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3><a href="">極簡咖啡館</a></h3>
+                          <h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span class="rating-count">(143)</span>
+                          </h4>
+                        </div>
+                        <div class="col-md-6 right-col">
+                          <img class="icon-image" src="img/item_wifi.png"/>
+                          <img class="icon-image" src="img/item_power.png"/>
+                          <img class="icon-image" src="img/item_time.png"/>
+                          <img class="icon-image" src="img/item_quite.png"/>
+                          <img class="icon-image" src="img/item_booking.png"/>
+                          <br />
+                          <!-- tags -->
+                          <div class="row">
+                            <div class="tag-container">
+                              <ul class="pager">
+                                <li><a href="#">#安靜</a></li>
+                                <li><a href="#">#明亮</a></li>
+                                <li><a href="#">#早午靜</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+              <!-- result item -->
+              <div class="col-md-6">
+
+                <div class="thumbnail">
+                  <img class="thumbnail-image" src="./img/img_2.jpg" alt=""/>
+                  <div class="caption">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3><a href="">這是咖啡</a></h3>
+                          <h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span class="rating-count">(120)</span>
+                          </h4>
+                        </div>
+                        <div class="col-md-6 right-col">
+                          <img class="icon-image" src="img/item_wifi.png"/>
+                          <img class="icon-image" src="img/item_power.png"/>
+                          <img class="icon-image" src="img/item_time.png"/>
+                          <img class="icon-image" src="img/item_quite.png"/>
+                          <img class="icon-image" src="img/item_booking.png"/>
+                          <br />
+                          <!-- tags -->
+                          <div class="row">
+                            <div class="tag-container">
+                              <ul class="pager">
+                                <li><a href="#">#安靜</a></li>
+                                <li><a href="#">#明亮</a></li>
+                                <li><a href="#">#早午靜</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <!-- result item -->
+              <div class="col-md-6">
+
+                <div class="thumbnail">
+                  <img class="thumbnail-image" src="./img/img_3.jpg" alt=""/>
+                  <div class="caption">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3><a href="">City Cafe</a></h3>
+                          <h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span class="rating-count">(108)</span>
+                          </h4>
+                        </div>
+                        <div class="col-md-6 right-col">
+                          <img class="icon-image" src="img/item_wifi.png"/>
+                          <img class="icon-image" src="img/item_power.png"/>
+                          <img class="icon-image" src="img/item_time.png"/>
+                          <img class="icon-image" src="img/item_quite.png"/>
+                          <img class="icon-image" src="img/item_booking.png"/>
+                          <br />
+                          <!-- tags -->
+                          <div class="row">
+                            <div class="tag-container">
+                              <ul class="pager">
+                                <li><a href="#">#安靜</a></li>
+                                <li><a href="#">#明亮</a></li>
+                                <li><a href="#">#早午靜</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <!-- result item -->
+              <div class="col-md-6">
+
+                <div class="thumbnail">
+                  <img class="thumbnail-image" src="./img/img_4.jpg" alt=""/>
+                  <div class="caption">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3><a href="">不錯喝咖啡</a></h3>
+                          <h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span class="rating-count">(42)</span>
+                          </h4>
+                        </div>
+                        <div class="col-md-6 right-col">
+                          <img class="icon-image" src="img/item_wifi.png"/>
+                          <img class="icon-image" src="img/item_power.png"/>
+                          <img class="icon-image" src="img/item_time.png"/>
+                          <img class="icon-image" src="img/item_quite.png"/>
+                          <img class="icon-image" src="img/item_booking.png"/>
+                          <br />
+                          <!-- tags -->
+                          <div class="row">
+                            <div class="tag-container">
+                              <ul class="pager">
+                                <li><a href="#">#安靜</a></li>
+                                <li><a href="#">#明亮</a></li>
+                                <li><a href="#">#早午靜</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <!-- result item -->
+              <div class="col-md-6">
+
+                <div class="thumbnail">
+                  <img class="thumbnail-image" src="./img/img_2.jpg" alt=""/>
+                  <div class="caption">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3><a href="">好喝咖啡</a></h3>
+                          <h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span class="rating-count">(20)</span>
+                          </h4>
+                        </div>
+                        <div class="col-md-6 right-col">
+                          <img class="icon-image" src="img/item_wifi.png"/>
+                          <img class="icon-image" src="img/item_power.png"/>
+                          <img class="icon-image" src="img/item_time.png"/>
+                          <img class="icon-image" src="img/item_quite.png"/>
+                          <img class="icon-image" src="img/item_booking.png"/>
+                          <br />
+                          <!-- tags -->
+                          <div class="row">
+                            <div class="tag-container">
+                              <ul class="pager">
+                                <li><a href="#">#安靜</a></li>
+                                <li><a href="#">#明亮</a></li>
+                                <li><a href="#">#早午靜</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <!-- result item -->
+              <div class="col-md-6">
+
+                <div class="thumbnail">
+                  <img class="thumbnail-image" src="./img/img_1.jpg" alt=""/>
+                  <div class="caption">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3><a href="">極簡咖啡館</a></h3>
+                          <h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span class="rating-count">(8)</span>
+                          </h4>
+                        </div>
+                        <div class="col-md-6 right-col">
+                          <img class="icon-image" src="img/item_wifi.png"/>
+                          <img class="icon-image" src="img/item_power.png"/>
+                          <img class="icon-image" src="img/item_time.png"/>
+                          <img class="icon-image" src="img/item_quite.png"/>
+                          <img class="icon-image" src="img/item_booking.png"/>
+                          <br />
+                          <!-- tags -->
+                          <div class="row">
+                            <div class="tag-container">
+                              <ul class="pager">
+                                <li><a href="#">#安靜</a></li>
+                                <li><a href="#">#明亮</a></li>
+                                <li><a href="#">#早午靜</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
         </div>
 
-        <!-- lefthand map -->
-        <div class="col-md-4 col-sm-12 content-panel">
+        <!-- righthand map -->
+        <div class="col-md-5 col-sm-12 content-panel">
           <div id="map"></div>
         </div>
 
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="specific-time-modal" tabindex="-1" role="dialog" aria-labelledby="specific-time-label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="specific-time-label">想去的時間</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <select id="specific-time-weekday" class="form-control">
+                      <option value="0">星期日</option>
+                      <option value="1">星期一</option>
+                      <option value="2">星期二</option>
+                      <option value="3">星期三</option>
+                      <option value="4">星期四</option>
+                      <option value="5">星期五</option>
+                      <option value="6">星期六</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-3 label-text">
+                    <span>從：</span>
+                  </div>
+                  <div class="col-md-9">
+                    <select id="specific-time-start-hour" class="form-control">
+                      <option value="0">00:00</option>
+                      <option value="1">01:00</option>
+                      <option value="2">02:00</option>
+                      <option value="3">03:00</option>
+                      <option value="4">04:00</option>
+                      <option value="5">05:00</option>
+                      <option value="6">06:00</option>
+                      <option value="7">07:00</option>
+                      <option value="8">08:00</option>
+                      <option value="9">09:00</option>
+                      <option value="10">10:00</option>
+                      <option value="11">11:00</option>
+                      <option value="12">12:00</option>
+                      <option value="13">13:00</option>
+                      <option value="14">14:00</option>
+                      <option value="15">15:00</option>
+                      <option value="16">16:00</option>
+                      <option value="17">17:00</option>
+                      <option value="18">18:00</option>
+                      <option value="19">19:00</option>
+                      <option value="20">20:00</option>
+                      <option value="21">21:00</option>
+                      <option value="22">22:00</option>
+                      <option value="23">23:00</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-3 label-text">
+                    <span>到：</span>
+                  </div>
+                  <div class="col-md-9">
+                    <select id="specific-time-end-hour" class="form-control">
+                      <option value="0">00:00</option>
+                      <option value="1">01:00</option>
+                      <option value="2">02:00</option>
+                      <option value="3">03:00</option>
+                      <option value="4">04:00</option>
+                      <option value="5">05:00</option>
+                      <option value="6">06:00</option>
+                      <option value="7">07:00</option>
+                      <option value="8">08:00</option>
+                      <option value="9">09:00</option>
+                      <option value="10">10:00</option>
+                      <option value="11">11:00</option>
+                      <option value="12">12:00</option>
+                      <option value="13">13:00</option>
+                      <option value="14">14:00</option>
+                      <option value="15">15:00</option>
+                      <option value="16">16:00</option>
+                      <option value="17">17:00</option>
+                      <option value="18">18:00</option>
+                      <option value="19">19:00</option>
+                      <option value="20">20:00</option>
+                      <option value="21">21:00</option>
+                      <option value="22">22:00</option>
+                      <option value="23">23:00</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="specific-time-confirm" data-dismiss="modal">確定</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -557,6 +720,44 @@
         });
 
       }
+
+    </script>
+
+    <script>
+
+      $(document).ready(function() {
+        setSpecificTimeModalToNowInDefault();
+      });
+
+      function setSpecificTimeModalToNowInDefault() {
+
+        var now = new Date();
+        var weekday = now.getDay();
+        var startHours = now.getHours();
+        var endHours = (startHours < 23)? (startHours + 1) : (startHours - 23);
+
+        $('#specific-time-weekday').val(weekday);
+        $('#specific-time-start-hour').val(startHours);
+        $('#specific-time-end-hour').val(endHours);
+
+      }
+
+      $('.option-box').click(function () {
+        $(this).toggleClass('enabled');
+      });
+
+      $('.option-box.option-box-time').click(function () {
+        $('.option-box.option-box-time').removeClass('enabled');
+        $(this).addClass('enabled');
+      });
+
+      $('#specific-time-confirm').click(function() {
+        var weekday = $('#specific-time-weekday option:selected').text();
+        var startTime = $('#specific-time-start-hour option:selected').text();
+        var endTime = $('#specific-time-end-hour option:selected').text();
+        $('#specific-time-text').text(weekday + ' ' + startTime + ' ~ ' + endTime);
+      });
+
     </script>
 
   </body>
